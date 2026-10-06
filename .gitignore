@@ -1,0 +1,12 @@
+# Visual Studio / .NET
+.vs/
+**/bin/
+**/obj/
+*.user
+*.suo
+
+# Credenciales y configuracion local
+*.env
+.env
+secrets.json
+credenciales.txt
