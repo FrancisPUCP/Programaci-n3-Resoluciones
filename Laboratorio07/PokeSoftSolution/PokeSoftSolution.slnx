@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="PokemonSoftApp/PokemonSoftApp.csproj" />
+  <Project Path="PokeSoftBusinessLogic/PokeSoftBusinessLogic.csproj" Id="4d06229f-b4e6-435e-bd56-0e0e91dff232" />
+  <Project Path="PokeSoftDAO/PokeSoftDAO.csproj" Id="5fa05824-a0df-42ac-a89f-e125a3bd8d54" />
+  <Project Path="PokeSoftDBManager/PokeSoftDBManager.csproj" Id="0c7b07f3-75e6-4620-8eae-31b186e18fc5" />
+  <Project Path="PokeSoftModel/PokeSoftModel.csproj" />
+</Solution>
