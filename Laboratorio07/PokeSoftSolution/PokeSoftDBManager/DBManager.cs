@@ -5,6 +5,12 @@ namespace PokeSoftDBManager
     public class DBManager
     {
         private static DBManager? instance;
+        private string? cadenaConexion;
+
+        public void Inicializar(string cadenaConexion)
+        {
+            this.cadenaConexion = cadenaConexion;
+        }
 
         public static DBManager Instance
         {
@@ -21,16 +27,9 @@ namespace PokeSoftDBManager
         {
             get
             {
-                // Reemplaza estos valores solo en tu copia local.
-                // No subas credenciales reales al repositorio.
-                string cadena =
-                    "Server=TU_ENDPOINT_AWS;" +
-                    "Port=3306;" +
-                    "Database=TU_BASE_DE_DATOS;" +
-                    "User ID=TU_USUARIO;" +
-                    "Password=TU_PASSWORD;";
+                MySqlConnection con =
+                    new MySqlConnection(cadenaConexion);
 
-                MySqlConnection con = new MySqlConnection(cadena);
                 con.Open();
                 return con;
             }
